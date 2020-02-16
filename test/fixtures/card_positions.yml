@@ -1,0 +1,35 @@
+# TODO: auf cards und deren zugehörigkeiten zu lists anpassen
+one:
+  user: alice
+  card: one
+  position: 0
+
+two:
+  user: alice
+  card: two
+  position: 1
+
+three:
+  user: bob
+  card: one
+  position: 1
+
+four:
+  user: bob
+  card: two
+  position: 0
+
+five:
+  user: bob
+  card: three
+  position: 2
+
+six:
+  user: bob
+  card: four
+  position: 1
+
+seven:
+  user: bob
+  card: five
+  position: 0

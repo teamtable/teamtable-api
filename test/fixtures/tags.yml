@@ -1,0 +1,24 @@
+one:
+  name: one
+  color: '#A1B4F3'
+  project: one
+
+two:
+  name: two
+  color: '#000'
+  project: one
+
+three:
+  name: three
+  color: '#FFF'
+  project: one
+
+four:
+  name: four
+  color: '#123456'
+  project: two
+
+five:
+  name: five
+  color: '#AAA'
+  project: three

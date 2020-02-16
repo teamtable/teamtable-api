@@ -1,0 +1,67 @@
+---
+- - :ignore_group
+  - production
+  - :who:
+    :why:
+    :versions: []
+    :when: 2018-12-03 20:59:25.940554000 Z
+- - :approve
+  - awesome_gpl_gem
+  - :who: V. Schmidt
+    :why: Go ahead
+    :versions: []
+    :when: 2018-12-03 21:03:10.396067000 Z
+- - :whitelist
+  - MIT
+  - :who: V. Schmidt
+    :why: free to use
+    :versions: []
+    :when: 2018-12-03 21:03:38.367526000 Z
+- - :whitelist
+  - Apache 2.0
+  - :who: Janis Schanbacher
+    :why: free to use
+    :versions: []
+    :when: 2019-04-22 21:30:33.731494000 Z
+- - :whitelist
+  - New BSD
+  - :who: Janis Schanbcher
+    :why: free to use
+    :versions: []
+    :when: 2019-04-22 21:33:29.840376000 Z
+- - :whitelist
+  - Simplified BSD
+  - :who: Janis Schanbcher
+    :why: free to use
+    :versions: []
+    :when: 2019-04-22 21:34:21.159797000 Z
+- - :whitelist
+  - ruby
+  - :who: Janis Schanbcher
+    :why: free to use
+    :versions: []
+    :when: 2019-04-22 21:35:11.693309000 Z
+- - :whitelist
+  - ISC
+  - :who: Janis Schanbcher
+    :why: free to use
+    :versions: []
+    :when: 2019-04-22 21:36:01.742812000 Z
+- - :whitelist
+  - GPL-3.0+
+  - :who: Janis Schanbcher
+    :why: free to use
+    :versions: []
+    :when: 2019-04-22 21:36:54.104039000 Z
+- - :approve
+  - iye
+  - :who: Janis Schanbacher
+    :why: Licensed under MIT according to github.com/firmafon/iye/master/LICENSE
+    :versions: []
+    :when: 2019-04-22 21:48:46.265128000 Z
+- - :approve
+  - blankslate
+  - :who: Janis Schanbacher
+    :why: Go ahead. Listed GPLv2+ or Ruy as Licenses on pkgs.org
+    :versions: []
+    :when: 2019-04-22 21:49:20.359900000 Z

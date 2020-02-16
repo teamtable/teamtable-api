@@ -1,0 +1,39 @@
+one:
+  user: alice
+  list: one
+  position: 0
+
+two:
+  user: alice
+  list: four
+  position: 1
+
+three:
+  user: alice
+  list: five
+  position: 2
+
+four:
+  user: alice
+  list: two
+  position: 0
+
+five:
+  user: bob
+  list: one
+  position: 1
+
+six:
+  user: bob
+  list: four
+  position: 2
+
+seven: 
+  user: bob
+  list: five
+  position: 0
+
+eight:
+  user: clara
+  list: three
+  position: 0

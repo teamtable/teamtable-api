@@ -1,0 +1,9 @@
+<p><%= t 'devise.mailer.greeting.hello' %> <%= @resource.name %>!</p>
+<% if @resource.unconfirmed_email.nil? %>
+  <h2><%= t 'devise.mailer.greeting.welcome' %></h2>
+<% else %>
+<% end %>
+
+<p><%= t 'devise.mailer.confirmation_instructions.instruction' %> </p>
+
+<p><%= link_to t('devise.mailer.confirmation_instructions.link_text'), confirmation_url(@resource, confirmation_token: @token) %></p>

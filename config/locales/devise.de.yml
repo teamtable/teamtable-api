@@ -1,0 +1,111 @@
+de:
+  activerecord:
+    attributes:
+      user:
+        confirmation_sent_at: Bestätigung gesendet am
+        confirmation_token: Bestätigungs-Token
+        confirmed_at: Bestätigt am
+        created_at: Erstellt am
+        current_password: Bisheriges Passwort
+        current_sign_in_at: Aktuelle Anmeldung vom
+        current_sign_in_ip: IP der aktuellen Anmeldung
+        email: E-Mail
+        encrypted_password: Verschlüsseltes Passwort
+        failed_attempts: Fehlversuche
+        last_sign_in_at: Letzte Anmeldung am
+        last_sign_in_ip: IP der letzten Anmeldung
+        locked_at: Gesperrt am
+        password: Passwort
+        password_confirmation: Passwortbestätigung
+        remember_created_at: Angemeldet bleiben vom
+        remember_me: Angemeldet bleiben
+        reset_password_sent_at: Passwort-Zurücksetzen-E-Mail gesendet am
+        reset_password_token: Passwort-Zurücksetzen-Token
+        sign_in_count: Anzahl Anmeldungen
+        unconfirmed_email: Unbestätigte E-Mail-Adresse
+        unlock_token: Entsperrungs-Token
+        updated_at: Aktualisiert am
+    errors:
+      models:
+        user:
+          attributes:
+            email:
+              taken: ist bereits vergeben.
+  devise:
+    confirmations:
+      confirmed: "Deine E-Mail-Adresse wurde bestätigt."
+      send_instructions: "Du wirst in wenigen Minuten eine E-Mail erhalten. Darin wird erklärt, wie du deine E-Mail-Adresse bestätigen kannst. Schau bitte auch in deinem Spam-Ordner nach, wenn du diese E-Mail nicht erhalten hast."
+      send_paranoid_instructions: "Falls deine E-Mail-Adresse in unserer Datenbank hinterlegt ist, wirst du in wenigen Minuten eine E-Mail erhalten. Darin wird erklärt, wie du deine E-Mail-Adresse bestätigen kannst. Schau bitte auch in deinem Spam-Ordner nach, wenn du diese E-Mail nicht erhalten hast."
+    failure:
+      already_authenticated: "Du bist bereits angemeldet."
+      inactive: "Dein Konto wurde noch nicht aktiviert."
+      invalid: "%{authentication_keys} oder Passwort ungültig."
+      last_attempt: "Du hast noch einen Versuch, bevor dein Konto gesperrt wird."
+      locked: "Dein Konto ist gesperrt."
+      not_found_in_database: "%{authentication_keys} oder Passwort ungültig."
+      pending: "Dein Konto wird immer noch überprüft."
+      timeout: "Deine Sitzung ist abgelaufen. Bitte melde dich erneut an, um fortzufahren."
+      unauthenticated: "Du musst dich anmelden oder registrieren, bevor du fortfahren kannst."
+      unconfirmed: "Du musst deine E-Mail-Adresse bestätigen, bevor du fortfahren kannst."
+    mailer:
+      greeting:
+        hello: "Hi"
+        welcome: "Willkommen am TeamTable!"
+      confirmation_instructions:
+        subject: "Bestätigung deines Accounts"
+        instruction: "Bitte bestätige deine E-Mail-Adresse durch klicken des folgenden links:"
+        link_text: "Email bestätigen"
+      reset_password_instructions:
+        subject: "Passwort zurücksetzen"
+        instruction: "Jemand hat eine Passwortänderung für deinen Account angefragt. Du kannst dein Passwort über den folgenden link ändern:"
+        link_text: "Change password"
+        ignore_if_not_requested: "Wenn du diese Anfrage nicht gestellt hast, kannst du diese E-Mail ignorieren."
+        no_change: "Dein Passwort wird sich nicht ändern solange du den obigen Link anklickst und ein neues erstellst."
+      unlock_instructions:
+        subject: "Konto entsperren"
+        account_locked: "Dein Konto wurde aufgrund einer zu hohen Anzahl erfolgloser Anmeldeversuche gesperrt"
+        instruction: "Klicke den nachfeolgenden Link um dein Konto zu entsperren:"
+        link_text: "Konto entsperren"
+      email_changed:
+        subject: "E-Mail-Adresse geändert"
+        body_unconfirmed: "Die E-Mail-Adresse deines Accounts wird geändert zu"
+        body_confirmed: "Die E-Mail-Adresse deines Accounts wurde geändert zu"
+      password_change:
+        subject: "Passwort geändert"
+        body: "Das Passwort für deinen Account wurde geändert."
+    omniauth_callbacks:
+      failure: "Du konntest nicht mit deinem %{kind}-Konto angemeldet werden, weil \"%{reason}\"."
+      success: "Du hast dich erfolgreich mit deinem %{kind}-Konto angemeldet."
+    passwords:
+      no_token: "Du kannst diese Seite nur über den Link aus der E-Mail zum Passwort-Zurücksetzen aufrufen. Wenn du einen solchen Link aufgerufen hast, stelle bitte sicher, dass du die vollständige Adresse aufrufst."
+      send_instructions: "Du erhältst in wenigen Minuten eine E-Mail. Darin wird erklärt, wie du dein Passwort zurücksetzen kannst."
+      send_paranoid_instructions: "Falls deine E-Mail-Adresse in unserer Datenbank hinterlegt ist, erhältst du in wenigen Minuten eine E-Mail. Darin wird erklärt, wie du dein Passwort zurücksetzen kannst."
+      updated: "Dein Passwort wurde geändert. Du bist jetzt angemeldet."
+      updated_not_active: "Dein Passwort wurde geändert."
+    registrations:
+      destroyed: "Dein Konto wurde gelöscht."
+      signed_up: "Willkommen! Du hast dich erfolgreich registriert."
+      signed_up_but_inactive: "Du hast dich erfolgreich registriert. Wir konnten dich noch nicht anmelden, da dein Konto inaktiv ist."
+      signed_up_but_locked: "Du hast dich erfolgreich registriert. Wir konnten dich noch nicht anmelden, da dein Konto gesperrt ist."
+      signed_up_but_pending: "Eine Nachricht mit einem Bestätigungslink wurde an dich per E-Mail geschickt. Nachdem du diesen Link angeklickt hast werden wir deine Anfrage überprüfen. Du wirst benachrichtigt falls die Anfrage angenommen wurde."
+      signed_up_but_unconfirmed: "Du hast dich erfolgreich registriert. Wir konnten dich noch nicht anmelden, da dein Konto noch nicht bestätigt ist. Du erhältst in Kürze eine E-Mail. Darin ist erklärt, wie du dein Konto freischalten kannst."
+      update_needs_confirmation: "Deine Daten wurden aktualisiert, aber du musst deine neue E-Mail-Adresse bestätigen. Du erhältst in wenigen Minuten eine E-Mail. Darin ist erklärt, wie du die Änderung deiner E-Mail-Adresse abschließen kannst."
+      updated: "Deine Daten wurden aktualisiert."
+    sessions:
+      already_signed_out: "Erfolgreich abgemeldet."
+      signed_in: "Erfolgreich angemeldet."
+      signed_out: "Erfolgreich abgemeldet."
+    unlocks:
+      send_instructions: "Du erhältst in wenigen Minuten eine E-Mail. Darin wird erklärt, wie du dein Konto entsperren kannst."
+      send_paranoid_instructions: "Falls deine E-Mail-Adresse in unserer Datenbank hinterlegt ist, erhältst du in wenigen Minuten eine E-Mail. Darin wird erklärt, wie du dein Konto entsperren kannst."
+      unlocked: "Dein Konto wurde entsperrt. Du bist jetzt angemeldet."
+  errors:
+    messages:
+      already_confirmed: "wurde bereits bestätigt, bitte versuche dich anzumelden"
+      confirmation_period_expired: "muss innerhalb %{period} bestätigt werden, bitte fordere einen neuen Link an"
+      expired: "ist abgelaufen, bitte neu anfordern"
+      not_found: "nicht gefunden"
+      not_locked: "ist nicht gesperrt"
+      not_saved:
+        one: "1 Fehler hat verhindert, dass %{resource} gespeichert wurde:"
+        other: "%{count} Fehler verhinderten, dass %{resource} gespeichert wurde:"

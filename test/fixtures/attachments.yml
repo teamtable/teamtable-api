@@ -1,0 +1,15 @@
+one:
+  card: one
+  tag: one
+
+two:
+  card: one
+  tag: three
+
+three:
+  card: two
+  tag: one
+
+four:
+  card: four
+  tag: two
