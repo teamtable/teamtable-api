@@ -1,0 +1,37 @@
+# TODO: replace titles and descriptions
+
+one:
+  title: Planning
+  description: Tasks related to planing the project. 
+  created_by: alice
+  project: one
+
+two:
+  title: Conception
+  description: Tasks related to concepting the project.
+  created_by: clara
+  project: three
+
+three:
+  title: Janis # Instead of using list_memberships one can also use the title.
+  # description: Description is not required. 
+  created_by: bob
+  project: two
+
+four:
+  title: Development
+  description: Tasks related to development.
+  created_by: alice
+  project: one
+
+five:
+  title: Quality assurance
+  description: Tasks related to quality assurance.
+  created_by: alice
+  project: one
+  
+six:
+  title: List six
+  description: A list alice has access to.
+  created_by: alice
+  project: four

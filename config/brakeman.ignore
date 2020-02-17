@@ -1,0 +1,206 @@
+{
+  "ignored_warnings": [
+    {
+      "warning_type": "Unscoped Find",
+      "warning_code": 82,
+      "fingerprint": "0b32b6c2d5f1a73fd96259cae68fccaba1ecfbc8333a3ce6c08b8733e3d853a2",
+      "check_name": "UnscopedFind",
+      "message": "Unscoped call to List#find",
+      "file": "app/controllers/cards_controller.rb",
+      "line": 25,
+      "link": "https://brakemanscanner.org/docs/warning_types/unscoped_find/",
+      "code": "List.find(params[:card][:list_id])",
+      "render_path": null,
+      "location": {
+        "type": "method",
+        "class": "CardsController",
+        "method": "create"
+      },
+      "user_input": "params[:card][:list_id]",
+      "confidence": "Weak",
+      "note": ""
+    },
+    {
+      "warning_type": "Unscoped Find",
+      "warning_code": 82,
+      "fingerprint": "1110b941ddea55d40a52b52f2ec8aa73d58a9a296869a13f8c5c8d0ec5c23934",
+      "check_name": "UnscopedFind",
+      "message": "Unscoped call to List#find",
+      "file": "app/controllers/lists_controller.rb",
+      "line": 102,
+      "link": "https://brakemanscanner.org/docs/warning_types/unscoped_find/",
+      "code": "List.find(params[:id])",
+      "render_path": null,
+      "location": {
+        "type": "method",
+        "class": "ListsController",
+        "method": "set_list"
+      },
+      "user_input": "params[:id]",
+      "confidence": "Weak",
+      "note": ""
+    },
+    {
+      "warning_type": "Unscoped Find",
+      "warning_code": 82,
+      "fingerprint": "405b43b14a5e61a572027c83802bf380af52d0128c99848048ebc1c523260bd1",
+      "check_name": "UnscopedFind",
+      "message": "Unscoped call to Project#find",
+      "file": "app/controllers/projects_controller.rb",
+      "line": 58,
+      "link": "https://brakemanscanner.org/docs/warning_types/unscoped_find/",
+      "code": "Project.find((User.find(current_user_id)[\"current_project_id\"] or User.find(current_user_id).memberships.order(:created_at).last.project_id))",
+      "render_path": null,
+      "location": {
+        "type": "method",
+        "class": "ProjectsController",
+        "method": "current"
+      },
+      "user_input": "User.find(current_user_id).memberships",
+      "confidence": "Weak",
+      "note": ""
+    },
+    {
+      "warning_type": "Unscoped Find",
+      "warning_code": 82,
+      "fingerprint": "580d8e9c0b36e7f8795278358e1e86515aa5fc4b6dde92ce2f57e151252e7e1a",
+      "check_name": "UnscopedFind",
+      "message": "Unscoped call to ListMembership#find",
+      "file": "app/controllers/list_memberships_controller.rb",
+      "line": 69,
+      "link": "https://brakemanscanner.org/docs/warning_types/unscoped_find/",
+      "code": "ListMembership.find(params[:id])",
+      "render_path": null,
+      "location": {
+        "type": "method",
+        "class": "ListMembershipsController",
+        "method": "set_list_membership"
+      },
+      "user_input": "params[:id]",
+      "confidence": "Weak",
+      "note": ""
+    },
+    {
+      "warning_type": "Unscoped Find",
+      "warning_code": 82,
+      "fingerprint": "a934411c3daa4a98d01052a0491f7cfa1e4f9db2de8826e15a9664b91731143a",
+      "check_name": "UnscopedFind",
+      "message": "Unscoped call to Membership#find",
+      "file": "app/controllers/memberships_controller.rb",
+      "line": 67,
+      "link": "https://brakemanscanner.org/docs/warning_types/unscoped_find/",
+      "code": "Membership.find(params[:id])",
+      "render_path": null,
+      "location": {
+        "type": "method",
+        "class": "MembershipsController",
+        "method": "set_membership"
+      },
+      "user_input": "params[:id]",
+      "confidence": "Weak",
+      "note": ""
+    },
+    {
+      "warning_type": "Unscoped Find",
+      "warning_code": 82,
+      "fingerprint": "b65152f1b2c4e9e18bcc4a3fd637b7bd5dd4b79421460a2c764bc3ead2ad1aa0",
+      "check_name": "UnscopedFind",
+      "message": "Unscoped call to Project#find",
+      "file": "app/controllers/projects_controller.rb",
+      "line": 115,
+      "link": "https://brakemanscanner.org/docs/warning_types/unscoped_find/",
+      "code": "Project.find(params[:id])",
+      "render_path": null,
+      "location": {
+        "type": "method",
+        "class": "ProjectsController",
+        "method": "set_project"
+      },
+      "user_input": "params[:id]",
+      "confidence": "Weak",
+      "note": ""
+    },
+    {
+      "warning_type": "Unscoped Find",
+      "warning_code": 82,
+      "fingerprint": "cfa03576aff8c8d0bd537788bb8367538c54e9624a66c249fe3b14eb5ec75c06",
+      "check_name": "UnscopedFind",
+      "message": "Unscoped call to Tag#find",
+      "file": "app/controllers/tags_controller.rb",
+      "line": 45,
+      "link": "https://brakemanscanner.org/docs/warning_types/unscoped_find/",
+      "code": "Tag.find(params[:id])",
+      "render_path": null,
+      "location": {
+        "type": "method",
+        "class": "TagsController",
+        "method": "set_tag"
+      },
+      "user_input": "params[:id]",
+      "confidence": "Weak",
+      "note": ""
+    },
+    {
+      "warning_type": "Unscoped Find",
+      "warning_code": 82,
+      "fingerprint": "d71a39d0d51d3aef49dd04fc5dc28e6019fe331fe8cf39571f6277a54dc49fd1",
+      "check_name": "UnscopedFind",
+      "message": "Unscoped call to Attachment#find",
+      "file": "app/controllers/attachments_controller.rb",
+      "line": 12,
+      "link": "https://brakemanscanner.org/docs/warning_types/unscoped_find/",
+      "code": "Attachment.find(params[:id])",
+      "render_path": null,
+      "location": {
+        "type": "method",
+        "class": "AttachmentsController",
+        "method": "destroy"
+      },
+      "user_input": "params[:id]",
+      "confidence": "Weak",
+      "note": ""
+    },
+    {
+      "warning_type": "Unscoped Find",
+      "warning_code": 82,
+      "fingerprint": "ddbcaad49810b91a652b6171c7538a2b758e2698318b514de131acc8e3049f31",
+      "check_name": "UnscopedFind",
+      "message": "Unscoped call to Assignment#find",
+      "file": "app/controllers/assignments_controller.rb",
+      "line": 33,
+      "link": "https://brakemanscanner.org/docs/warning_types/unscoped_find/",
+      "code": "Assignment.find(params[:id])",
+      "render_path": null,
+      "location": {
+        "type": "method",
+        "class": "AssignmentsController",
+        "method": "set_assignment"
+      },
+      "user_input": "params[:id]",
+      "confidence": "Weak",
+      "note": ""
+    },
+    {
+      "warning_type": "Unscoped Find",
+      "warning_code": 82,
+      "fingerprint": "f47afda82416504fa5d0accf638508aa97ec929e949897207907f7d080de19ec",
+      "check_name": "UnscopedFind",
+      "message": "Unscoped call to List#find",
+      "file": "app/controllers/lists_controller.rb",
+      "line": 55,
+      "link": "https://brakemanscanner.org/docs/warning_types/unscoped_find/",
+      "code": "List.find(params[:id])",
+      "render_path": null,
+      "location": {
+        "type": "method",
+        "class": "ListsController",
+        "method": "destroy"
+      },
+      "user_input": "params[:id]",
+      "confidence": "Weak",
+      "note": ""
+    }
+  ],
+  "updated": "2019-04-23 00:05:46 +0200",
+  "brakeman_version": "4.3.1"
+}

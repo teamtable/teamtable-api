@@ -1,0 +1,48 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: Card one
+  description: Card description one
+  state: 2
+  deadline: 2020-03-15 22:56:08
+  priority: 3
+  created_by: alice
+  completed_by: bob
+  completed_at: <%= Time.zone.now %>
+  list: one
+
+two:
+  title: Card two
+  description: Card description two
+  state: 0
+  deadline: 2019-03-15 22:56:08
+  priority: 1
+  created_by: bob
+  list: one
+
+three:
+  title: Card three
+  description: Card description three
+  state: 0
+  deadline: 2019-03-15 22:56:08
+  priority: 1
+  created_by: bob
+  list: two
+
+four:
+  title: Card five
+  description: Card description five
+  state: 0
+  deadline: 2019-04-15 22:56:08
+  priority: 1
+  list: two
+  created_by: alice
+
+five:
+  title: Card four
+  description: Card description four
+  state: 0
+  deadline: 2019-03-15 22:56:08
+  priority: 1
+  created_by: bob
+  list: two

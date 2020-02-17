@@ -1,0 +1,106 @@
+AllCops:
+  TargetRubyVersion: 2.5
+  TargetRailsVersion: 5.2
+
+  Exclude:
+  - '**/templates/**/*'
+  - '**/vendor/**/*'
+  - 'Gemfile'
+  - 'Guardfile'
+  - 'tmp/**/*'
+  - 'config/**/*'
+  - 'bin/**/*'
+  - 'db/**/*'
+  - 'spec/*_helper.rb'
+  - 'lib/tasks/**/*'
+  - 'try/**/*'
+  DisplayCopNames: yes
+  DisplayStyleGuide: yes
+  ExtraDetails: yes
+
+Rails:
+  Enabled: yes
+
+Style/TernaryParentheses:
+  Enabled: no
+
+Style/FrozenStringLiteralComment:
+  Enabled: no
+
+Style/MutableConstant:
+  Enabled: no
+
+Style/Not:
+  Enabled: no
+
+Style/StringLiterals:
+  Enabled: no
+
+Style/Documentation:
+  Enabled: no
+
+Style/SignalException:
+  Enabled: no
+
+Style/For:
+  Enabled: no
+
+Style/AndOr:
+  Enabled: no
+
+Style/FormatString:
+  EnforcedStyle: percent
+
+Style/TrailingCommaInArguments:
+  Enabled: no
+
+Style/TrailingCommaInArrayLiteral:
+  Enabled: no
+
+Style/TrailingCommaInHashLiteral:
+  Enabled: no
+
+Style/EmptyMethod:
+  Enabled: no
+
+Style/SymbolArray:
+  Enabled: no
+
+Style/PercentLiteralDelimiters:
+  Enabled: no
+
+Style/LambdaCall:
+  Enabled: no
+
+Layout/SpaceBeforeBlockBraces:
+  Enabled: no
+
+Layout/EmptyLinesAroundClassBody:
+  Enabled: no
+
+Layout/EmptyLinesAroundModuleBody:
+  Enabled: no
+
+Layout/EmptyLinesAroundBlockBody:
+  Enabled: no
+
+Layout/AlignHash:
+  EnforcedLastArgumentHashStyle: ignore_implicit
+
+Layout/CaseIndentation:
+  IndentOneStep: true
+
+Metrics/LineLength:
+  Max: 120
+
+Metrics/MethodLength:
+  Max: 20
+
+Metrics/AbcSize:
+  Max: 30
+
+Metrics/ModuleLength:
+  Max: 150
+
+Rails/HasAndBelongsToMany:
+  Enabled: no

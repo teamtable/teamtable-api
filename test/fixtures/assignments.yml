@@ -1,0 +1,18 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: alice
+  doing: true
+  card: one
+
+two:
+  user: alice
+  card: four
+
+three:
+  user: bob
+  card: one
+
+four:
+  user: bob
+  card: two
