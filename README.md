@@ -3,6 +3,16 @@
 Teamtable is a project management web application made for the web development course at HTW Berlin by [Janis Schanbacher](https://github.com/janis-schanbacher) and [Florian Wolf](https://github.com/flo-wolf).
 This repository is the [Ruby on Rails](https://rubyonrails.org/) backend, which provides a RESTful API. The React frontend can be found [here](https://github.com/https://github.com/teamtable/teamtable) and tested at: [teamtable.io](http://teamtable.io).
 
+
+## Features
+ The following functionalities are implemented in the API
+- User registration, e-mail confirmation, password reset
+- Token authentication (using devise, devise-jwt), authorization
+- Projects, lists, cards and tags
+- Memberships and assignments
+- Multilanguage
+
+
 ## Getting started
 
 ### Prerequisites
@@ -45,15 +55,6 @@ This repository is the [Ruby on Rails](https://rubyonrails.org/) backend, which 
   ```sh
   $ rails server -p 3001
   ```
-
-
-## Features
- The following functionalities are implemented in the API
-- User registration, e-mail confirmation, passwod reset
-- Token authentication (using devise, devise-jwt), authorization
-- Projects, lists, cards and tags
-- Memberships and assignments
-- Multilanguage
 
 
 ## Usage
