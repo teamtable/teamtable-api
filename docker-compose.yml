@@ -1,0 +1,15 @@
+services:
+  api:
+    build: .
+    ports:
+      - "3001:3001"
+    volumes:
+      - .:/app
+    environment:
+      RAILS_ENV: development
+      PORT: 3001
+      DISABLE_SPRING: 1
+    command: >
+      bash -lc "bundle _1.17.3_ exec rails db:migrate
+      && bundle _1.17.3_ exec rails db:seed
+      && bundle _1.17.3_ exec rails server -b 0.0.0.0 -p 3001"

@@ -36,6 +36,9 @@ module TeamtableApi
     config.middleware.insert_before 0, Rack::Cors do
       allow do
         origins /^https?:\/\/localhost:3000/,
+                /^https?:\/\/localhost:3002/,
+                /^https?:\/\/127\.0\.0\.1:3000/,
+                /^https?:\/\/127\.0\.0\.1:3002/,
                 /^https?:\/\/teamtable.herokuapp.com/,
                 /^https?:\/\/teamtable.io/
         resource '*',

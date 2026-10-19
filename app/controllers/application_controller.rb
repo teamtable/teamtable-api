@@ -21,7 +21,7 @@ class ApplicationController < ActionController::API
 
   def current_user_id
     token = request.headers.fetch('Authorization').split(' ').last
-    secret = Rails.application.credentials.devise_jwt_secret_key
+    secret = AppSecrets.jwt_secret
     payload = JWT.decode(token, secret)
     payload.first.values.first.to_i # return subject (user_id)
   end
