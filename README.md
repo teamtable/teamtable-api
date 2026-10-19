@@ -1,7 +1,7 @@
 # Teamtable API
 
 Teamtable is a project management web application made for the web development course at HTW Berlin by [Janis Schanbacher](https://github.com/janis-schanbacher) and [Florian Wolf](https://github.com/flo-wolf).
-This repository is the [Ruby on Rails](https://rubyonrails.org/) backend, which provides a RESTful API. The React frontend can be found [here](https://github.com/https://github.com/teamtable/teamtable) and tested at: [teamtable.io](http://teamtable.io).
+This repository is the [Ruby on Rails](https://rubyonrails.org/) backend, which provides a RESTful API. The React frontend can be found [here](https://github.com/teamtable/teamtable) and was originally demoed at [teamtable.io](http://teamtable.io).
 
 
 ## Features
@@ -15,50 +15,44 @@ This repository is the [Ruby on Rails](https://rubyonrails.org/) backend, which 
 
 ## Getting started
 
+The original app targeted Ruby 2.5.3. Current machines typically have a much newer system Ruby, so **local development is meant to run in Docker** (Ruby 2.7.8, SQLite, no `master.key` required).
+
 ### Prerequisites
-- [Ruby](https://www.ruby-lang.org/en/) version 2.5.3
-- [Bundler](https://github.com/teamtable/teamtable-api.git)
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+- The React frontend in a sibling checkout, started with `npm start` (it listens on port **3002** and calls this API on **3001**)
 
-### Installation
+### Run with Docker
 
-- Clone the repository to your local machine
-  ```sh
-  $ git clone https://github.com/teamtable/teamtable-api.git
-  ```
+```sh
+git clone https://github.com/teamtable/teamtable-api.git
+cd teamtable-api
+docker compose up --build
+```
 
-- Install the needed gems from within the repository:
-  ```sh
-  $ cd teamtable-api
-  $ bundle install --without production
-  ```
-- Migrate the database:
-  ```sh
-  $ rails db:migrate
-  ```
+The API is then at [http://localhost:3001](http://localhost:3001). On first boot it migrates SQLite (`db/development.sqlite3`) and seeds a confirmed user:
 
-> The following two steps are required in order to access credentials and other encrypted files.
-- Create a file config/master.key
-  ```sh
-  $ touch config/master.key
-  ```
-- Ask one of the developers for the masterkey and insert it into `config/master.key`
-  ```sh
-  $ echo "replace with masterkey" >> config/master.key
-  ```
+- email: `dev@teamtable.local`
+- password: `password`
 
-- Finally, run the test suite to verify that everything is working correctly:
-  ```sh
-  $ rails test
-  ```
+Development mail is written to `tmp/mail` instead of SendGrid. JWT auth uses a development secret when `config/master.key` is missing.
 
-- If the test suite passes, you'll be ready to run the app in a local server:
-  ```sh
-  $ rails server -p 3001
-  ```
+CORS allows the frontend origins `http://localhost:3002` and `http://localhost:3000`.
 
+### Native Ruby (optional)
+
+If you already have Ruby `>= 2.5.3` and `< 3.0` plus Bundler 1.17.3:
+
+```sh
+bundle _1.17.3_ install --without production
+bundle _1.17.3_ exec rails db:migrate
+bundle _1.17.3_ exec rails db:seed
+bundle _1.17.3_ exec rails server -p 3001
+```
+
+`config/master.key` is only required in production (to decrypt credentials for SendGrid and the JWT secret). Production still expects PostgreSQL.
 
 ## Usage
-To use the application locally run `$ rails server -p 3001` and use the following request base URL: `http://localhost:3001`
+Local request base URL: `http://localhost:3001`. The curl examples below still show the old Heroku host; replace it with `http://localhost:3001` when running locally.
 
 - Sign up
   ```sh
