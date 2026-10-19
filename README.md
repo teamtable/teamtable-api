@@ -51,6 +51,14 @@ bundle _1.17.3_ exec rails server -p 3001
 
 `config/master.key` is only required in production (to decrypt credentials for SendGrid and the JWT secret). Production still expects PostgreSQL.
 
+## Deployment
+
+The React frontend can go to Vercel as a static CRA build (`REACT_APP_API_URL` pointing at the API origin).
+
+This Docker setup is **local development only**: it uses SQLite, Ruby 2.7, and `bundle --without production` (so the `pg` gem is not installed). You cannot drop `docker-compose.yml` onto Vercel as a fullstack deploy.
+
+A Vercel container Function would need a separate production `Dockerfile.vercel` (listen on `$PORT`, `RAILS_ENV=production`, Postgres via `DATABASE_URL`, `RAILS_MASTER_KEY` / JWT secret, CORS for the Vercel origin). SQLite will not persist on Vercel’s filesystem, and the two git repos would need to live in one Vercel project to use [Services](https://vercel.com/docs/services). A conventional split is still simpler: Vercel for the frontend, Render / Fly / Railway (or Heroku) for the Rails API + Postgres.
+
 ## Usage
 Local request base URL: `http://localhost:3001`. The curl examples below still show the old Heroku host; replace it with `http://localhost:3001` when running locally.
 
